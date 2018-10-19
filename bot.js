@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const token = "NDA5Mjg0NjkzOTczMDA4Mzk1.DX64wQ.VTxjFuvz60Vu4Zk0htmWsrMMwZc"
 const fs = require('fs');
 const moment = require('moment');
 const sql = require('sqlite');
@@ -9,7 +8,7 @@ const ms = require('ms');
 
 
 client.on("guildDelete", guild => {
-    console.log(` Dreams Left From Server -- = ${guild.name} = -- , Server Owner -- = ${guild.owner.user.username} = --`)
+    console.log(` BOT Left From Server -- = ${guild.name} = -- , Server Owner -- = ${guild.owner.user.username} = --`)
    
 var g= guild.members.size
 var i= guild.iconURL
@@ -17,7 +16,7 @@ var i= guild.iconURL
 const embed = new Discord.RichEmbed()
   
                    .setColor("RANDOM")
-                .setFooter(` ©  Dream™ `)
+                .setFooter(` ©  SOKA™ `)
                 .setTitle(" Dreams Left Server !")
                 .addField("**Guild Name:**", guild.name )
                  .addField("**Owner:**", guild.owner.user.username )
@@ -31,14 +30,12 @@ client.on('guildDelete', guild => {
     
 
   var star = new Discord.RichEmbed()
-  .setTitle("**__Why Dreams Left ?__**")
+  .setTitle("**__Why SOKA Left ?__**")
   .setColor("ffffff")
   .setDescription("**We Are Sorry For Any Problems In The Bot **")
    .addField("🌍 **| CONTACT :**   ",
 " `-contact` `-sug` `-bug` ")
-.addField("**:globe_with_meridians: | WEBSITE :**","https://dreamsbot.wixsite.com/dreams")
- .addField('🔗 **| INVITE** :' , " https://goo.gl/s8AwxX")
- .addField('🔗 **| SUPPORT SERVER** :' , " https://discordapp.com/invite/gP6q8tY")
+ .addField('🔗 **| SUPPORT SERVER** :' , "  https://discord.gg/ArGwWfH")
             .setFooter(`Dreams`, 'https://cdn.discordapp.com/attachments/402070843032731648/417407034775044097/image.jpg')
       guild.owner.send(star)
 })
@@ -52,13 +49,13 @@ var i= guild.iconURL
 const embed = new Discord.RichEmbed()
   
                    .setColor("RANDOM")
-                .setFooter(` ©  Dream™ `)
+                .setFooter(` ©  SOKA™ `)
                 .setTitle(" Dreams Added To Server !")
                 .addField("**Guild Name:**", guild.name )
                  .addField("**Owner:**", guild.owner.user.username )
                  .addField("**MEMBER COUNT:**", g )
                   .setThumbnail (i)
-client.channels.get("409331733251751936").send(embed)
+client.channels.get("492667082962370570").send(embed)
 
 });
 
@@ -198,7 +195,7 @@ client.on('message', message => {
             timestamp: new Date(),
             footer: {
               icon_url: client.user.avatarURL,
-              text: "© Dreams"
+              text: "© SOKA"
             }
           }
         });
@@ -243,7 +240,7 @@ client.on('message', message => {
                 timestamp: new Date(),
                 footer: {
                   icon_url: client.user.avatarURL,
-                  text: "© Dreams"
+                  text: "© SOKA"
                 }
               }
             });
@@ -981,7 +978,7 @@ const embed = new Discord.RichEmbed()
      .setColor(0xd3d0c4)
 .setAuthor(message.author.username, message.author.avatarURL)
 .setTitle(':arrow_right: Click Here Invite Link اضغط هنا')
-.setURL('https://discordapp.com/oauth2/authorize?client_id=409284693973008395&scope=bot&permissions=435172607')
+.setURL('https://discordapp.com/api/oauth2/authorize?client_id=500702351229714432&permissions=8&scope=bot')
 
 message.channel.sendEmbed(embed);
 
@@ -998,7 +995,7 @@ const embed = new Discord.RichEmbed()
      .setColor(0xd3d0c4)
 .setAuthor(message.author.username, message.author.avatarURL)
 .setTitle(':arrow_right: Click Here Invite Link اضغط هنا')
-.setURL('https://discordapp.com/oauth2/authorize?client_id=409284693973008395&scope=bot&permissions=435172607')
+.setURL('https://discordapp.com/api/oauth2/authorize?client_id=500702351229714432&permissions=8&scope=bot')
 
 message.channel.sendEmbed(embed);
 
@@ -1016,8 +1013,8 @@ const embed = new Discord.RichEmbed()
    .setColor(0xd3d0c4)
 .setAuthor(message.author.username, message.author.avatarURL)
 .setTitle(':arrow_right: Click Here Invite Link اضغط هنا')
-.setURL('https://discord.gg/gP6q8tY')
-  .setFooter(`©  Dreams™ `)
+.setURL('  https://discord.gg/ArGwWfH ')
+  .setFooter(`©  SOKA™ `)
 message.channel.sendEmbed(embed);
 
 }
@@ -1064,7 +1061,7 @@ client.on('message', message => {
     if (command === "kill"){
 
    var sabotage = message.mentions.users.first();
-   if(sabotage == message.author)return message.reply(`**الانتحار ما زين و الله**`);
+   if(sabotage == message.author)return message.reply(`**الانتحار مو زين و الله**`);
     if(sabotage === client.user) return message.reply(`** تبي تقتلني ؟ **`);
   if (sabotage < 1) {
     message.delete();
@@ -1613,14 +1610,14 @@ client.on('message', message => {
     var embed  = new Discord.RichEmbed()
     .setAuthor("[ Dreames Bot ]", " https://cdn.discordapp.com/attachments/409281937794924546/420678602892378112/Untitled-1_converted.png")
     .addField("**[ Prefix ] :**","**[ - ]**" , true)
-    .addField("**🆔 [ Dreams ID ] **", "**"+"409284693973008395"+"**",true)
-    .addField("**🏷 [ Dreams ] **","** دريمس**")
-    .addField("🛠 [ Bot Developer ]","<@!248937180737568768> <@!280040452995153923> <@!340653929429729281>")
+    .addField("**🆔 [ SOKA ID ] **", "**"+"500702351229714432"+"**",true)
+    .addField("**🏷 [ SOKA ] **","** دريمس**")
+    .addField("🛠 [ Bot Developer ]","<@!389100615432929290>")
     .addField("**🌍 [ Servers ]**" , "**"+`${client.guilds.size}`+" Server**",true)
     .addField("**👥 [ Users ] **",`** ${client.users.size} User**`)
     .setThumbnail(" https://cdn.discordapp.com/attachments/409281937794924546/420678602892378112/Untitled-1_converted.png")
     .setColor("ffffff")
-    .setFooter(`-help to see all Dreams commands `, ' https://cdn.discordapp.com/attachments/409281937794924546/420678602892378112/Untitled-1_converted.png')
+    .setFooter(`-help to see all SOKA commands `, ' https://cdn.discordapp.com/attachments/409281937794924546/420678602892378112/Untitled-1_converted.png')
     message.channel.sendEmbed(embed)
     }
     });
@@ -3763,7 +3760,7 @@ const c = new Discord.RichEmbed()
 
 
 .setColor("RANDOM")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 
 const e = new Discord.RichEmbed()
           .setDescription(` ** 「🛠 | ADMINS COMMANDS」**`)
@@ -3793,7 +3790,7 @@ const e = new Discord.RichEmbed()
 " To Unlock A Text Channel   .")
 
 .setColor("RANDOM")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
   
   const f = new Discord.RichEmbed()
          .setDescription(`** 「🛡| MOD COMMANDS 」**`)
@@ -3822,7 +3819,7 @@ const e = new Discord.RichEmbed()
 .addField("`-showchannel`",
 " To Unhide A Text Channel   .")
 .setColor("RANDOM")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 
 const h = new Discord.RichEmbed()
          .setDescription(` ** 「️️️��| MUSIC COMMANDS」**`)
@@ -3843,7 +3840,7 @@ const h = new Discord.RichEmbed()
 .addField("`-mrepeat`",
 " To Loop The Queue   .")
 .setColor("RANDOM")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 
 const i = new Discord.RichEmbed()
        .setDescription(`** 「🖼 | Image COMMANDS」**`)
@@ -3853,7 +3850,7 @@ const i = new Discord.RichEmbed()
 " To Image Search In Imgur **EX:** -imgur random cats   .")
 
 .setColor("RANDOM")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 
 const z = new Discord.RichEmbed()
           .setDescription(`** 「:video_game: | GAMES COMMANDS」**`)
@@ -3867,7 +3864,7 @@ const z = new Discord.RichEmbed()
 " To Start A Reaction PollTo Play (Rock , Paper , scissors) ")
 
 .setColor("RANDOM")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 
 const j = new Discord.RichEmbed()
        .setDescription(`  ** 「👤 | INFO COMMANDS」**`)
@@ -3888,7 +3885,7 @@ const j = new Discord.RichEmbed()
 .addField("`-members`",
 "  To Preview Member's Status   .")
 .setColor("RANDOM")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 
 const k = new Discord.RichEmbed()
           .setDescription(` ** 「🔧 | BOT INFO」**`)
@@ -3902,15 +3899,9 @@ const k = new Discord.RichEmbed()
 .addField("`-stats`",
 "  To preview Bots Stats   .")
 .setColor("RANDOM")
-.setFooter(`©  Dreams™`)
+.setFooter(`© SOKA™`)
 
-const l = new Discord.RichEmbed()
-.addField("**:globe_with_meridians: | WEBSITE :**","https://dreamsbot.wixsite.com/dreams")
-.addField("**:link: | INVITE :**","https://goo.gl/s8AwxX")
-.addField("**:link: | INVITE MUSIC:**","https://discordapp.com/oauth2/authorize?client_id=336097096337850369&scope=bot&permissions=16951376")
-.addField("**:link: | SUPPORT SERVER :**","https://discordapp.com/invite/gP6q8tY")
-.setColor("RANDOM")
-.setFooter(`©  Dreams™ `)
+
 
     let pages = [q,a,b,c,d,e,f,h,i,z,j,k,l];
     let page = 1;
@@ -3953,8 +3944,8 @@ client.on('message', message => {
 		   
     const embed = new Discord.RichEmbed()
                    .setColor("ffffff")
-                .setFooter(` ©  Dream™ `)
-                    .setAuthor("Dreams" ,"https://cdn.discordapp.com/attachments/409331262025891841/428511194832437251/Untitled-1_converted.png" )
+                .setFooter(` ©  SOKA™ `)
+                    .setAuthor("SOKA" ,"https://cdn.discordapp.com/attachments/409331262025891841/428511194832437251/Untitled-1_converted.png" )
 .setDescription(`
 **SPEED RESPONSE** :comet:️
 **ONLINE PER DAY** :clock330:
@@ -4058,7 +4049,7 @@ client.on('message', message => {
 .setColor("RANDOM")
 .addField("🌍 **| OWNER :**   ",
 " `-contact` ")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 message.react("💎")
 message.author.sendEmbed(embed);
 
@@ -4092,7 +4083,7 @@ client.on('message', message => {
 .setColor("RANDOM")
 .addField("🌍 **| OWNER :**  ",
 " `-contact` ")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 message.react("💫")
 message.author.sendEmbed(embed);
 
@@ -4118,7 +4109,7 @@ client.on('message', message => {
 .setColor("RANDOM")
 .addField("🌍 **| OWNER :**   ",
 " `-contact` ")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 message.react("🌈")
 message.author.sendEmbed(embed);
 
@@ -4146,7 +4137,7 @@ client.on('message', message => {
 .setColor("RANDOM")
 .addField("🌍 **| OWNER :**  ",
 " `-contact`")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 message.react("💵")
 message.author.sendEmbed(embed);
 
@@ -4188,7 +4179,7 @@ client.on('message', message => {
 .setColor("RANDOM")
 .addField("���� **| OWNER :**  ",
 " `-contact`")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 message.react("🛠")
 message.author.sendEmbed(embed);
 
@@ -4230,7 +4221,7 @@ client.on('message', message => {
 .setColor("RANDOM")
 .addField("🌍 **| OWNER :**   ",
 " `-contact`")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 message.react("🛡")
 message.author.sendEmbed(embed);
 
@@ -4264,7 +4255,7 @@ client.on('message', message => {
 .setColor("RANDOM")
 .addField("🌍 **| OWNER :**  ",
 " `-contact`")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 message.react("️️️🎶")
 message.author.sendEmbed(embed);
 
@@ -4292,7 +4283,7 @@ client.on('message', message => {
 .setColor("RANDOM")
 .addField("🌍 **| OWNER :**  ",
 " `-contact`")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 message.react("🖼")
 message.author.sendEmbed(embed);
 
@@ -4316,7 +4307,7 @@ client.on('message', message => {
 .setColor("RANDOM")
 .addField("🌍 **| OWNER :**  ",
 " `-contact`")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 message.react("🖼")
 message.author.sendEmbed(embed);
 
@@ -4350,7 +4341,7 @@ client.on('message', message => {
 .setColor("RANDOM")
 .addField("🌍 **| OWNER :**  ",
 " `-contact`")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 message.react("👤")
 message.author.sendEmbed(embed);
 
@@ -4376,7 +4367,7 @@ client.on('message', message => {
 .setColor("RANDOM")
 .addField("🌍 **| OWNER :**  ",
 " `-contact`")
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 message.react("🔧")
 message.author.sendEmbed(embed);
 
@@ -4411,7 +4402,7 @@ client.on('message', message => {
 
 .setColor("ffffff")
 
-.setFooter(`©  Dreams™ `)
+.setFooter(`©  SOKA™ `)
 
 message.channel.sendEmbed(embed);
 }
@@ -4439,7 +4430,7 @@ message.channel.sendEmbed(embed);
 message.channel.sendEmbed(dm).then(msg => msg.delete(5000));
 message.react("📩")
 var embed = new Discord.RichEmbed()
- .setAuthor("Dreams" ,"https://cdn.discordapp.com/attachments/409331262025891841/428511194832437251/Untitled-1_converted.png" )
+ .setAuthor("SOKA" ,"https://cdn.discordapp.com/attachments/499213385750282244/502842976095961099/no_u.png" )
 .setThumbnail(client.user.avatarURL)
 .setDescription(`
 ** :robot:  ميزات البوت  :robot: **
@@ -4454,12 +4445,6 @@ var embed = new Discord.RichEmbed()
 :globe_with_meridians: **عدد الاعضاء** ${client.users.size} 
 
 
-╭━━━╮╱╱╱╱╱╱╱╱╱╱╱╱╱╭━━╮╱╱╱╭╮
-╰╮╭╮┃╱╱╱╱╱╱╱╱╱╱╱╱╱┃╭╮┃╱╱╭╯╰╮
-╱┃┃┃┣━┳━━┳━━┳╮╭┳━━┫╰╯╰┳━┻╮╭╯
-╱┃┃┃┃╭┫┃━┫╭╮┃╰╯┃━━┫╭━╮┃╭╮┃┃
-╭╯╰╯┃┃┃┃━┫╭╮┃┃┃┣━━┃╰━╯┃╰╯┃╰╮
-╰━━━┻╯╰━━┻╯╰┻┻┻┻━━┻━━━┻━━┻━╯
 
  `)
  .setColor('0bbaba')
@@ -4695,12 +4680,12 @@ message.author.sendEmbed(embed)
  -bug
    └─ للابلاغ عن اي عطل في الاوامر
 
-**:globe_with_meridians: | الموقع الخاص بالبوت :** https://dreamsbot.wixsite.com/dreams
-🔗 **| دعوة البوت** : https://goo.gl/s8AwxX
-🔗 **| سيرفر الدعم و المساعدة** :https://discordapp.com/invite/gP6q8tY
+
+
+🔗 **| سيرفر الدعم و المساعدة** :  https://discord.gg/ArGwWfH
 `)
 .setColor('0bbaba')
-  .setFooter(`©  Dream™ `)
+  .setFooter(`©  SOKA™ `)
 message.author.sendEmbed(embed)
     
 }
